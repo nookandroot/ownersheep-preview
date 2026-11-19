@@ -75,6 +75,22 @@ body.has-sticky{padding-bottom:76px}
 section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important;margin-top:14px !important;text-align:center;max-width:none}
 .chk{display:flex;align-items:center;gap:12px;min-height:44px;margin:0 0 16px;font-size:16px;font-weight:600;cursor:pointer}.chk input{width:22px;height:22px;min-height:0;margin:0;flex:0 0 22px;accent-color:var(--green)}.chk em{font-weight:400;color:var(--soft);font-style:normal}
 .hide{display:none}
+.hret{margin:0 0 30px;max-width:620px;background:rgba(255,255,255,.06);border:1px solid rgba(243,210,122,.45);border-radius:18px;padding:20px 22px}.hret p{margin:0;color:rgba(255,255,255,.88)}
+.hret .k{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2);opacity:.85;margin-bottom:8px}.hret .k a{color:inherit}
+.hret .v{font-size:clamp(26px,4.4vw,34px);font-weight:850;letter-spacing:-.02em;line-height:1.15;color:#fff;margin-bottom:8px}.hret .v span{color:var(--gold)}
+.hret .l{font-size:16.5px;line-height:1.55;margin-bottom:10px}.hret .d{font-size:14.5px;line-height:1.55;color:rgba(255,255,255,.72);border-top:1px solid rgba(255,255,255,.14);padding-top:10px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:26px 0 10px}.fact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 16px}
+.fact strong{display:block;font-size:28px;font-weight:850;letter-spacing:-.02em;color:var(--green);line-height:1.1;margin-bottom:8px}.fact span{display:block;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.tl{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:34px 0 0}
+.own{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:36px;align-items:start;margin-top:8px}
+.ttw{width:100%;max-width:340px;margin:0 auto;min-height:200px}.ttw blockquote.tiktok-embed{margin:0 !important;max-width:340px !important;min-width:0 !important}
+.ttw .fb{display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:9/16;max-height:600px;border-radius:18px;overflow:hidden;background:linear-gradient(180deg,rgba(8,14,6,.15),rgba(8,14,6,.88)),var(--deep);padding:22px;color:#fff;text-decoration:none}
+.ttw .fb b{font-size:19px;line-height:1.35;margin-bottom:6px}.ttw .fb span{font-size:15px;color:var(--gold2);font-weight:700}
+.pq{margin:0 0 18px;padding:0 0 0 20px;border-left:4px solid var(--gold)}.pq blockquote{margin:0 0 10px;font-size:22px;line-height:1.45;font-weight:750;color:var(--ink);letter-spacing:-.01em}.pq figcaption{font-size:14.5px;line-height:1.5;color:var(--soft)}.pq figcaption a{color:var(--green);font-weight:650;display:inline-block;padding:10px 0}
+@media(max-width:900px){.facts{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.own{grid-template-columns:1fr;gap:24px}}
+@media(max-width:560px){.hret{padding:18px 18px}.fact{padding:16px 14px}.fact strong{font-size:24px}.pq blockquote{font-size:20px}}
+
 @media(max-width:560px){
  .hero .in{padding:56px 20px 56px}.wrap{padding:0 20px}
  .vid{margin-top:32px;border-radius:14px}.vid .cap{padding:12px 16px}
@@ -94,12 +110,13 @@ section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important
 <div class="bar">OwnerSheep™ by Aliyah Rizq Group. Farm in Bandar Penawar, Johor, near Desaru.</div>
 
 <div class="hero" id="hero"><div class="in">
-<div class="press" aria-label="As featured in"><b>As featured in</b><span>CNA</span><span><i>·</i> The Straits Times</span><span><i>·</i> Berita Harian</span><span><i>·</i> Harian Metro</span><span><i>·</i> ANTARA</span></div>
+<div class="press" aria-label="As featured in"><b>As featured in</b><span>CNA</span><span><i>·</i> The Straits Times</span><span><i>·</i> Berita Harian</span><span><i>·</i> Bernama</span><span><i>·</i> Destinasi TV</span></div>
 <p class="eb">OwnerSheep™ by Aliyah Rizq</p>
 <p class="pre">For people who want to own real livestock without having to manage a farm themselves...</p>
-<h1>Own real sheep.<br>Skip the farm work.<br><span>See the farm for yourself.</span></h1>
-<p class="lede">Own a minimum of 4 sheep, each bred over 3 years by Aliyah Rizq's team of expert breeders. Owners may choose to use the livestock for Qurban or other permitted uses, and at the end of the programme your flock is sold and you receive your share. <b>You never have to run the farm.</b></p>
-<div class="row"><a class="btn" href="#reserve">Register my interest in OwnerSheep<small>Two quick steps. The team will be in touch.</small></a></div>
+<h1>Own real sheep.<br>Grow your flock.<br><span>Share in the rewards.</span></h1>
+<p class="lede">Own a minimum of 4 sheep, each bred over 3 years by Aliyah Rizq's team of expert breeders. You retain ownership while they handle the operations. At the end of the programme your flock is sold and you receive your share. <b>You never have to run the farm.</b></p>
+<div class="hret" id="returns"><p class="k">As stated on Aliyah Rizq's <a href="https://www.privyr.com/form/mXVLqQ57#ownersheep-program" target="_blank" rel="noopener">OwnerSheep enquiry form</a></p><p class="v"><span>"Up to 30–33% returns</span> over 3 years"</p><p class="l">"At the end of the program, your flock is sold, and you receive your share of the profits."</p><p class="d">"*This is not an investment. This is an Ownership and Shepherding-as-a-Service programme provided by Aliyah Rizq." Ask the team for the full terms, including how your share is worked out.</p></div>
+<div class="row"><a class="btn" href="#reserve">Ask the team about owning sheep<small>Two quick steps. The team will be in touch.</small></a></div>
 <p class="note">Registering is free and doesn't commit you to anything. The team will explain pricing for the 4-sheep minimum when they get in touch.</p>
 <div class="ticks"><span>✓ Minimum 4 sheep</span><span>✓ Feeding, care and housing managed</span><span>✓ A farm you can visit</span></div>
 <div class="vid">
@@ -118,29 +135,26 @@ section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important
 <section class="dark" style="margin:0 -22px;padding:72px 22px;border-radius:24px">
 <p class="eb">The story behind it</p>
 <h2>From 30 goats and sheep in Mersing to 300 acres near Desaru.</h2>
-<p>Aliyah Rizq Group began as a family-run farm with 30 goats and sheep, serving aqiqah and korban needs for the Muslim community. Founder Madam Siti Alawiyah started it as Aliyah Rizq Farm on a small 2-acre farm in Mersing.</p>
+<p>Aliyah Rizq Group began as a family-run farm with 30 goats and sheep, serving aqiqah and korban needs for the Muslim community. Founder Madam Siti Alawiyah started it as Aliyah Rizq Farm on a small 2-acre farm in Mersing. In Aliyah Rizq's own words: "Founded in 2015 in Mersing, Malaysia, Aliyah Rizq started as a small family farm with 2 acres of land and 30 animals."</p>
 <p>From those roots in Mersing, the group expanded to Desaru and beyond. Today Aliyah Rizq Farm sits on 300 acres of farmland near Bandar Penawar, Johor, and is home to over 1,000 livestock, with sheep breeds such as Dorper, Suffolk and Santa Ines.</p>
 <p>Founder and CEO DS Ashraf Bakar has been farming livestock for over 10 years. In 2019 his business was awarded the Malaysian Book of Records for "The Largest Number of Sheep Slaughtered for Korban", in Johor.</p>
+<p>Today, in their words, Aliyah Rizq is "a regional halal livestock supply chain specialist, known for ethical farming, integrity, and scale."</p>
 <p class="strong">OwnerSheep puts that experience to work for you. Participants are assigned sheep under the programme, and Aliyah Rizq manages daily operations including feeding, care and housing.</p></section>
 
 <section><p class="eb">How it works</p><h2>How OwnerSheep works, in five steps</h2>
 <div class="step"><div class="num">1</div><div><b>Ownership allocation</b><span>Participants are assigned sheep under the programme. The minimum is 4 sheep to start.</span></div></div>
-<div class="step"><div class="num">2</div><div><b>Farm management</b><span>Aliyah Rizq manages daily operations including feeding, care, and housing.</span></div></div>
+<div class="step"><div class="num">2</div><div><b>Farm management</b><span>Aliyah Rizq manages daily operations including feeding, care, and housing. Caretaking and breeding are "carried out by our vets, trained professionals, and farm hands", with "annual health &amp; growth updates provided".</span></div></div>
 <div class="step"><div class="num">3</div><div><b>Growth and maintenance</b><span>Livestock are raised within the farm ecosystem following standard practices. "Each sheep is bred over 3 years and can produce up to 15 offspring."</span></div></div>
 <div class="step"><div class="num">4</div><div><b>Purpose and use</b><span>Owners may choose to use the livestock for purposes such as Qurban or other permitted uses.</span></div></div>
 <div class="step"><div class="num">5</div><div><b>End of the programme</b><span>At the end of the programme, your flock is sold and you receive your share. Until then, the programme allows continued involvement without requiring direct farm management.</span></div></div>
-<div class="ret" id="returns"><p class="ret-k">In Aliyah Rizq's own words, from their <a href="https://www.privyr.com/form/mXVLqQ57#ownersheep-program" target="_blank" rel="noopener" style="color:inherit">OwnerSheep enquiry form</a></p>
-<p class="ret-v">"Up to 30–33% returns over 3 years"</p>
-<p class="ret-l">"At the end of the program, your flock is sold, and you receive your share of the profits."</p>
-<p class="ret-d">"*This is not an investment. This is an Ownership and Shepherding-as-a-Service programme provided by Aliyah Rizq."</p>
-<p class="ret-d" style="border-top:0 !important;padding-top:6px !important">Ask the team for the full terms, including how your share is worked out.</p></div>
-<p class="src" style="margin-top:16px">Sources: <a href="https://aliyahrizq.com/ownersheep/" target="_blank" rel="noopener" style="color:inherit">aliyahrizq.com/ownersheep</a> and the <a href="https://www.privyr.com/form/mXVLqQ57#ownersheep-program" target="_blank" rel="noopener" style="color:inherit">OwnerSheep enquiry form</a> linked from aliyahrizq.com's "Speak To Us" button.</p></section>
+<p class="tl">How a flock grows, in Aliyah Rizq's numbers</p><div class="facts"><div class="fact"><strong>5.5 months</strong><span>"Gestation period is estimated to be 5.5 months"</span></div><div class="fact"><strong>2–3</strong><span>"In optimal conditions, some can produce 2–3 offspring per year"</span></div><div class="fact"><strong>36 months</strong><span>"Our sheep breeding schedule is optimised over a 36-month cycle", with natural downtimes for recovery, health and weaning</span></div><div class="fact"><strong>Up to 15</strong><span>"Each sheep is bred over 3 years and can produce up to 15 offspring."</span></div></div><p style="font-size:16.5px;margin:14px 0 0">That growth is what you share in at the end of the programme. <a href="#returns" style="color:var(--green);font-weight:700;display:inline-block;padding:10px 0">See what Aliyah Rizq states about returns ↑</a></p>
+<p class="src" style="margin-top:16px">Sources: <a href="https://aliyahrizq.com/ownersheep/" target="_blank" rel="noopener" style="color:inherit">aliyahrizq.com/ownersheep</a>, the <a href="https://www.privyr.com/form/mXVLqQ57#ownersheep-program" target="_blank" rel="noopener" style="color:inherit">OwnerSheep enquiry form</a> linked from aliyahrizq.com's "Speak To Us" button (up to 15 offspring), and Aliyah Rizq's OwnerSheep Programme deck (Jul 2026), slides 20 and 21.</p></section>
 
 <section><p class="eb">Three doubts, answered</p>
 <h2>Three doubts that stop most people, answered with facts you can check.</h2>
 <div class="belief"><p class="lie">"I'd need to know about farming."</p><h3>You don't.</h3><p>Aliyah Rizq handles the farming operations, including feeding, care and overall livestock management. Farming activities are handled by experienced teams. Your part is the decision.</p></div>
 <div class="belief"><p class="lie">"I can't trust what I can't check."</p><h3>Then check it. In person.</h3><p>Aliyah Rizq Farm is at PTD1721, Jalan, 81910 Bandar Penawar, Johor, near Desaru, and it is open to visitors during farm operating hours. Walk the farm, meet the animals and the team, and judge the operation with your own eyes.</p></div>
-<div class="belief"><p class="lie">"Is this a real operation, or just a website?"</p><h3>Look at the numbers they publish.</h3><p>300 acres of farmland. Over 1,000 livestock on the farm. A network of 300+ contract farmers across Malaysia, Indonesia, Thailand and Kenya. A Singapore-founded agri-livestock group headquartered at Sin Ming Lane.</p></div></section>
+<div class="belief"><p class="lie">"Is this a real operation, or just a website?"</p><h3>Look at the numbers they publish.</h3><p>300 acres of farmland. Over 1,000 livestock on the farm. A network of 300+ contract farmers across Malaysia, Indonesia, Thailand and Kenya. A Singapore-founded agri-livestock group headquartered at Sin Ming Lane. And, in their deck, awarded the ASEAN Records and ASIA Records for "Conducting the Largest Simultaneous Multi-Country Qurban Livestock Offering Within 24 Hours".</p></div></section>
 
 <section><p class="eb">Do it yourself, or let them do it?</p><h2>Land, housing, feed, care, people. Already in place.</h2>
 <table class="stackable"><tr><th></th><th>On your own</th><th class="us">With OwnerSheep</th></tr>
@@ -157,11 +171,11 @@ section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important
 <div class="si"><div class="ck">✓</div><div><b>Feeding, care and housing</b><span>Aliyah Rizq manages daily operations, so you are not running a farm.</span></div></div>
 <div class="si"><div class="ck">✓</div><div><b>A structured, managed environment</b><span>Livestock are raised following standard practices.</span></div></div>
 <div class="si"><div class="ck">✓</div><div><b>Experienced teams and expert breeders</b><span>The people behind Aliyah Rizq's breeding and farming operations.</span></div></div>
-<div class="si"><div class="ck">✓</div><div><b>Updates</b><span>"We handle all care, feeding, and updates."</span></div></div>
+<div class="si"><div class="ck">✓</div><div><b>Annual health and growth updates</b><span>"We handle all care, feeding, and updates." Caretaking and breeding by Aliyah Rizq's vets, trained professionals and farm hands.</span></div></div>
 <div class="si"><div class="ck">✓</div><div><b>Your choice of use</b><span>Qurban or other permitted uses.</span></div></div>
-<div class="si"><div class="ck">✓</div><div><b>A clear end point</b><span>At the end of the programme, your flock is sold and you receive your share.</span></div></div>
+<div class="si"><div class="ck">✓</div><div><b>Your share at the end</b><span>"At the end of the program, your flock is sold, and you receive your share of the profits." This is not an investment; it is an Ownership and Shepherding-as-a-Service programme.</span></div></div>
 <div class="ft"><b>Pricing and full terms</b> are explained by the team when they get in touch. Ask every question you have before you decide.</div></div>
-<div class="row" style="margin-top:30px"><a class="btn" href="#reserve">Register my interest<small>Takes about 30 seconds</small></a></div>
+<div class="row" style="margin-top:30px"><a class="btn" href="#reserve">Ask the team about owning sheep<small>Takes about 30 seconds</small></a></div>
 <p class="note">Registering is free and doesn't commit you to anything. The team will explain pricing for the 4-sheep minimum when they get in touch.</p></section>
 
 <section><p class="eb">What happens after you register</p><h2>Three steps from here. You decide at every one.</h2>
@@ -172,10 +186,12 @@ section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important
 <section><p class="eb">Picture this</p>
 <h2>You drive up to Aliyah Rizq Farm near Desaru.</h2>
 <p>You walk past the pens. Sheep, goats, horses, the farm team at work. You see for yourself how the people who would raise your sheep go about it.</p>
-<p>You didn't build a barn, buy feed or learn to farm. Aliyah Rizq handled that. And you're looking at something you own and you <mark>know</mark> it's real.</p>
+<p>You didn't build a barn, buy feed or learn to farm. Aliyah Rizq handled that. And you're looking at the operation behind the sheep you own, and you <mark>know</mark> it's real.</p>
 <p class="strong">That visit starts with registering your interest.</p>
 <div class="row"><a class="btn" href="#reserve">Register my interest in OwnerSheep<small>The team will be in touch</small></a></div>
 <p class="note">Registering is free and doesn't commit you to anything. The team will explain pricing for the 4-sheep minimum when they get in touch.</p></section>
+
+<section id="owner"><p class="eb">An OwnerSheep client, in his own words</p><h2>He doesn't run the farm. He visits it.</h2><p>Encik Salleh is an OwnerSheep client. In this video, posted by Aliyah Rizq on its official OwnerSheep TikTok, he talks about his time in the programme and the farm near Desaru.</p><div class="own"><div class="ttw" id="ttw"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aliyahrizqownersheep/video/7658276062899653909" data-video-id="7658276062899653909" style="max-width:340px;min-width:0"><section><a class="fb" href="https://www.tiktok.com/@aliyahrizqownersheep/video/7658276062899653909" target="_blank" rel="noopener"><b>Encik Salleh, a client testimonial</b><span>Watch on TikTok ↗</span></a></section></blockquote></div><div><figure class="pq"><blockquote>"Best of all, the values I get out of it, because whenever I'm bored in Singapore, I come here for the real farm life."</blockquote><figcaption>Encik Salleh, OwnerSheep client, in a <a href="https://www.tiktok.com/@aliyahrizqownersheep/video/7658276062899653909" target="_blank" rel="noopener">video posted by Aliyah Rizq on TikTok</a> (0:52)</figcaption></figure><p style="font-size:16.5px">Any figures Encik Salleh mentions in the video describe his own experience. Ask the team for the full terms and what would apply to you.</p><div class="row"><a class="btn" href="#reserve">Ask the team about owning sheep<small>The team will be in touch</small></a></div><p class="note">Registering is free and doesn't commit you to anything.</p></div></div></section>
 
 <section><p class="eb">Be honest with yourself</p><h2>OwnerSheep isn't for everyone.</h2>
 <div class="cards"><div class="card" style="flex:1 1 320px"><strong style="display:block;margin-bottom:12px">It's for you if</strong>
@@ -194,7 +210,7 @@ section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important
 <p style="font-size:16.5px"><span class="strong">Farm visits only:</span> WhatsApp <a href="https://wa.me/60134440607" target="_blank" rel="noopener" style="color:var(--green);font-weight:700;display:inline-block;padding:10px 0">+60 13-444 0607</a>. For OwnerSheep, use the form below.</p></section>
 
 <section id="reviews"><p class="eb">Farm visit reviews</p><h2>What visitors say about Aliyah Rizq Farm</h2>
-<p style="font-size:16.5px">These are reviews from visitors to Aliyah Rizq Farm in Desaru, about their farm visit. They are not OwnerSheep owner testimonials.</p>
+<p style="font-size:16.5px">These are reviews from visitors to Aliyah Rizq Farm in Desaru, about their farm visit. They are not OwnerSheep owner testimonials. For an OwnerSheep client's view, <a href="#owner" style="color:var(--green);font-weight:650;display:inline-block;padding:10px 0">watch Encik Salleh's video above</a>.</p>
 <div class="rvs"><figure class="rv"><div class="st">★★★★★</div><blockquote>“The team was friendly, welcoming and made sure everyone was comfortable and safe… Definitely worth visiting!”</blockquote><figcaption>Razif R. · Google review, farm visit</figcaption></figure><figure class="rv"><div class="st">★★★★★</div><blockquote>“Staffs is knowledgeable and show us around explaining everything well.. Service tip top.”</blockquote><figcaption>Mohamad S. · Google review, farm visit</figcaption></figure><figure class="rv"><div class="st">★★★★★</div><blockquote>“Staff is super friendly and helpful. The animal area is very clean too.”</blockquote><figcaption>Mayves G. · Google review, farm visit</figcaption></figure><figure class="rv"><div class="st">★★★★★</div><blockquote>“The staff were warm, welcoming, patient, and very helpful… The farm tour was informative and fun, especially for the children.”</blockquote><figcaption>Whitebeard · Google review, farm visit</figcaption></figure></div>
 <p class="src" style="margin-top:16px">4.7 from 80 reviews, as shown on <a href="https://aliyahrizqfarm.bcl.my/form/tiket" target="_blank" rel="noopener" style="color:var(--green);font-weight:650;display:inline-block;padding:12px 0">Aliyah Rizq Farm's page</a>. Quotes reproduced exactly as published there.</p></section>
 
@@ -209,13 +225,13 @@ section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important
 <details open><summary>What's the minimum?</summary><p>The minimum is 4 sheep to start. The team will explain pricing for the 4-sheep minimum when they get in touch.</p></details>
 <details><summary>How does the end of the programme work?</summary><p>Aliyah Rizq's OwnerSheep enquiry form states: "Each sheep is bred over 3 years and can produce up to 15 offspring." and "At the end of the program, your flock is sold, and you receive your share of the profits." Ask the team for the full terms, including how your share is worked out.</p></details>
 <details><summary>Can I use my sheep for Qurban?</summary><p>On aliyahrizq.com: "Owners may choose to utilise the livestock for purposes such as Qurban or other permitted uses." Ask the team how this works alongside the end-of-programme sale for your sheep.</p></details>
-<details><summary>What if a sheep falls ill or dies?</summary><p>Aliyah Rizq manages daily care. Ask the team about care and replacement terms for OwnerSheep before you decide.</p></details>
+<details><summary>What if a sheep falls ill or dies?</summary><p>Aliyah Rizq manages daily care. In their words: "We ensure the health and ethical treatment of livestock through proper care, disease prevention, and humane handling techniques." Ask the team about care and replacement terms for OwnerSheep before you decide.</p></details>
 <details><summary>Do I need to know anything about farming?</summary><p>No. You can own a sheep while Aliyah Rizq manages the daily care, feeding and farm operations.</p></details>
-<details><summary>Where are OwnerSheep sheep kept?</summary><p>Livestock are raised within Aliyah Rizq's farm ecosystem in a structured and managed environment. Ask the team where your sheep will be raised.</p></details>
+<details><summary>Where are OwnerSheep sheep kept?</summary><p>Livestock are raised within Aliyah Rizq's farm ecosystem in a structured and managed environment. Their OwnerSheep deck says: "You retain ownership while we handle the operations on our cluster farms across Southeast Asia." Ask the team where your sheep will be raised.</p></details>
 <details><summary>Can I visit the farm?</summary><p>Yes. Aliyah Rizq Farm is in Bandar Penawar, Johor, near Desaru. It is open Monday to Thursday 10 am to 4 pm, Friday 10 am to 12 pm and 2.30 pm to 4.30 pm, and Saturday and public holidays 10 am to 4 pm. Check with the team before you go, or tick the farm visit box on the form.</p></details>
-<details><summary>Who's behind OwnerSheep?</summary><p>Aliyah Rizq Holdings Pte Ltd, part of Aliyah Rizq Group, a Singapore-founded agri-livestock group. HQ: 28 Sin Ming Lane, #08-148, Midview City, Singapore 573972. The group operates across breeding, farming and supply chain development. Its team includes Founder Siti Alawiyah, Founder and CEO DS Ashraf Bakar, and Co-founder and COO DS Nabilah Bagarib.</p></details></section>
+<details><summary>Who's behind OwnerSheep?</summary><p>Aliyah Rizq Holdings Pte Ltd, part of Aliyah Rizq Group, a Singapore-founded agri-livestock group. HQ: 28 Sin Ming Lane, #08-148, Midview City, Singapore 573972. The group operates across breeding, farming and supply chain development. Its team includes Founder Siti Alawiyah, Founder and CEO DS Ashraf Bakar, and Co-founder and COO DS Nabilah Bagarib. OwnerSheep has its own team, led by Chief Commercial Officer Dr Eusniati Eusoff.</p></details></section>
 
-<section id="reserve"><p class="eb">Your next step</p><h2>Register your interest in OwnerSheep.</h2>
+<section id="reserve"><p class="eb">Your next step</p><h2>Own sheep. Share in the rewards. Start with one conversation.</h2>
 <p>Two quick steps. The team will be in touch to answer your questions, explain pricing and, if you like, arrange a farm visit.</p>
 <div class="form">
 <div id="s1"><div class="prog"><i class="on"></i><i></i></div>
@@ -237,12 +253,13 @@ section .note{color:var(--soft) !important}.note.dk{color:var(--soft) !important
 <p style="margin-top:34px;font-size:17.5px"><span class="strong">P.S.</span> Short version: a minimum of 4 sheep, each bred over 3 years by Aliyah Rizq's expert breeders, with feeding, care and housing handled for you. Use them for Qurban or other permitted uses, and at the end of the programme your flock is sold and you receive your share. Register your interest and the team will explain the rest.</p>
 <p style="font-size:17.5px"><span class="strong">P.P.S.</span> Not sure yet? Watch the 60-second farm video at the top of this page. Then tick "I'd like to arrange a farm visit" on the form and go and see the farm for yourself.</p></section>
 
-<div class="foot">OwnerSheep™ is a programme of Aliyah Rizq Group. Aliyah Rizq Holdings Pte Ltd · 28 Sin Ming Lane, #08-148, Midview City, Singapore 573972 · Office hours Monday to Friday, 9 am to 6 pm.<br>All programme details on this page are taken from <a href="https://aliyahrizq.com/" target="_blank" rel="noopener">aliyahrizq.com</a> and its linked OwnerSheep enquiry form.<br><a href="https://aliyahrizq.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="https://aliyahrizq.com/terms-of-service/" target="_blank" rel="noopener">Terms of Service</a><br>Preview mockup for review. Not Aliyah Rizq's live site.</div>
+<div class="foot">OwnerSheep™ is a programme of Aliyah Rizq Group. Aliyah Rizq Holdings Pte Ltd · 28 Sin Ming Lane, #08-148, Midview City, Singapore 573972 · Office hours Monday to Friday, 9 am to 6 pm.<br>All programme details on this page are taken from <a href="https://aliyahrizq.com/" target="_blank" rel="noopener">aliyahrizq.com</a>, its linked OwnerSheep enquiry form, Aliyah Rizq's OwnerSheep Programme deck (Jul 2026) and Aliyah Rizq's official OwnerSheep TikTok.<br><a href="https://aliyahrizq.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> · <a href="https://aliyahrizq.com/terms-of-service/" target="_blank" rel="noopener">Terms of Service</a><br>Preview mockup for review. Not Aliyah Rizq's live site.</div>
 </div>
-<div class="sticky" id="st"><a class="btn" href="#reserve">Register my interest in OwnerSheep</a></div>
+<div class="sticky" id="st"><a class="btn" href="#reserve">Ask the team about owning sheep</a></div>
 <script>
 function go2(){var n=document.getElementById('n').value.trim(),e=document.getElementById('e').value.trim();if(!n||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){document.getElementById('er1').style.display='block';return}document.getElementById('er1').style.display='none';document.getElementById('s1').classList.add('hide');document.getElementById('s2').classList.remove('hide');var f=n.split(/\s+/)[0];document.getElementById('ty').textContent=f?'Thank you, '+f+'.':'Thank you.'}
 function done(){if(document.getElementById('p').value.replace(/\D/g,'').length<6){document.getElementById('er2').style.display='block';return}if(document.getElementById('fv').checked){document.getElementById('tym').textContent="You're registered, and we've noted you'd like to arrange a farm visit. The team will be in touch about OwnerSheep. (Preview only: nothing was sent.)"}document.getElementById('s2').classList.add('hide');document.getElementById('s3').classList.remove('hide')}
 (function(){var st=document.getElementById('st'),hero=document.getElementById('hero'),rs=document.getElementById('reserve');function u(){var h=hero.getBoundingClientRect(),r=rs.getBoundingClientRect();var show=h.bottom<0&&(r.top>innerHeight||r.bottom<0);st.classList.toggle('show',show);document.body.classList.toggle('has-sticky',h.bottom<0)}addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u()})();
+(function(){var w=document.getElementById('ttw');if(!w)return;var done=false;function load(){if(done)return;done=true;var t=document.createElement('script');t.src='https://www.tiktok.com/embed.js';t.async=true;document.body.appendChild(t)}if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){load();io.disconnect()}},{rootMargin:'600px 0px'});io.observe(w)}else{load()}})();
 </script>
 </body></html>
